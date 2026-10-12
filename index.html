@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAS Renovation Inc. | Roofing, Storm Damage &amp; Insurance Claims in Fayetteville, NC | (910) 973-3557</title>
+  <meta name="description" content="SAS Renovation Inc. in Fayetteville, NC specializes in storm damage repairs and roofing, plus siding, painting, flooring, gutters, carpentry, remodeling and handyman work. Help with insurance claims and a no-cost inspection. Call (910) 973-3557.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Franklin:wght@600;700;800&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Lets CSS hide scroll-reveal content only when JS is running to reveal it again -->
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          // "Modern & premium" font row (PROMPT-LIBRARY §2a): an incorporated renovation company (roofing, siding, painting,
+          // flooring, remodeling) whose own Facebook cover is set in a clean modern sans with angled photo panels.
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Libre Franklin"', 'system-ui', 'sans-serif'],
+            headline: ['"Barlow Condensed"', '"Arial Narrow"', 'sans-serif']
+          },
+          // SAS Renovation: palette from their own logo (lightning bolt in yellow, sampled ~#ffe41a, edged in blue, sampled
+          // ~#2a73a0, behind silver S-A-S letters). 600 = the logo's blue edge (buttons, icons, links); 700 = hover; 900/950 = the
+          // same blue taken near-black for the dark sections and footer. 500 = the lightning yellow: in this layout 500 is only
+          // used for accents ON DARK (hero eyebrow, tile arrows, footer phone hover), like the bolt on the logo. Yellow repeats in
+          // the hand-copied spots (map dots, areas lead line, nav underline).
+          colors: {
+            brand: { 500: '#f6dc2a', 600: '#21689a', 700: '#18537c', 900: '#0f2b3f', 950: '#091b28' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body id="top" class="bg-white font-sans text-slate-800 antialiased">
+
+  <!-- NAV: top strip + white bar (logo | tagline | links | phone) -->
+  <div class="bg-brand-900 h-2.5"></div>
+
+  <header id="site-header" class="sticky top-0 z-40 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3 xl:gap-6">
+
+      <!-- Logo + divider + tagline -->
+      <a href="#top" class="header-brand flex items-center gap-3 max-[319px]:gap-2 xl:gap-4 shrink-0">
+        <!-- {{LOGO}}: their REAL logo (Facebook profile picture, 600px): the lightning-bolt S-A-S mark, cropped without the
+             "RENOVATION, INC." line (images/logo-mark.png, white background, sits on the white header). Name set as type beside it.
+             Ask for the original vector file before launch. -->
+        <img src="images/logo-mark.png" alt="" class="h-10 xl:h-11 w-auto shrink-0">
+        <span class="leading-none">
+          <span class="block font-display font-extrabold uppercase text-[21px] max-[379px]:text-[18px] max-[339px]:text-[16px] max-[299px]:text-[14px] lg:max-xl:text-[17px] xl:text-[23px] tracking-[0.02em] text-brand-900 whitespace-nowrap">SAS Renovation</span>
+          <span class="block text-[9px] max-[339px]:text-[8px] font-bold tracking-[0.16em] max-[339px]:tracking-[0.1em] uppercase text-brand-600 mt-1 whitespace-nowrap">Inc. &middot; Fayetteville, NC</span>
+        </span>
+      </a>
+
+      <!-- Desktop links -->
+      <nav class="hidden lg:flex items-center gap-3 xl:gap-7 whitespace-nowrap text-[14px] xl:text-[15px] font-medium text-slate-700" aria-label="Main">
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-6 hover:text-brand-600 focus:outline-none">
+            Services
+            <svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 5 5 5-5"/></svg>
+          </button>
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-b-lg shadow-lg py-2">
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Roofing</a>
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Insurance Claims</a>
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Siding &amp; Painting</a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-6 hover:text-brand-600 focus:outline-none">
+            About Us
+            <svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 5 5 5-5"/></svg>
+          </button>
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-b-lg shadow-lg py-2">
+            <a href="#about" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">About Us</a>
+            <a href="#reviews" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Reviews</a>
+          </div>
+        </div>
+
+        <a href="#projects" class="py-6 hover:text-brand-600">Projects</a>
+
+        <a href="#areas" class="py-6 hover:text-brand-600">Service Area</a>
+        <a href="#contact" class="py-6 hover:text-brand-600">Contact</a>
+      </nav>
+
+      <!-- Phone block -->
+      <a href="tel:9109733557" class="hidden md:block text-right shrink-0">
+        <span class="hidden xl:block text-[10px] font-bold tracking-[0.16em] uppercase text-slate-500">Call for a no-cost inspection</span>
+        <span class="flex items-center justify-end gap-2 text-brand-600 font-extrabold text-lg xl:text-[26px] leading-tight">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          (910) 973-3557
+        </span>
+      </a>
+
+      <!-- Free estimate CTA -->
+      <a href="#contact" class="hidden lg:inline-flex shrink-0 items-center whitespace-nowrap bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm uppercase tracking-wide px-4 xl:px-5 py-3 rounded-md shadow-sm transition-colors">
+        Free Inspection
+      </a>
+
+      <!-- Mobile toggle -->
+      <button id="menu-btn" class="menu-btn lg:hidden p-2 -mr-2 text-slate-700" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="bar bar-1" d="M4 7h16"/><path class="bar bar-2" d="M4 12h16"/><path class="bar bar-3" d="M4 17h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div id="mobile-menu" class="lg:hidden border-t border-slate-200 bg-white">
+      <div class="mobile-menu-inner px-4 py-3 flex flex-col text-[15px] font-medium text-slate-700 divide-y divide-slate-100">
+        <a href="#services" class="py-3">Services</a>
+        <a href="#about" class="py-3">About Us</a>
+        <a href="#projects" class="py-3">Projects</a>
+        <a href="#areas" class="py-3">Service Area</a>
+        <a href="#contact" class="py-3">Contact</a>
+        <a href="tel:9109733557" class="py-4 text-brand-600 font-extrabold text-xl">(910) 973-3557</a>
+        <a href="#contact" class="my-3 text-center bg-brand-600 text-white font-bold uppercase tracking-wide py-3 rounded-md">Free Inspection</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO: full-width photo under the nav, centered tagline, slide dots -->
+  <section class="cut-hero relative isolate min-h-[70vh] lg:min-h-[78vh] flex items-center overflow-hidden bg-brand-900">
+    <!-- {{HERO_IMAGE}}: REAL (their Google Business photos, 2000px): an SAS crew tearing off and re-shingling a roof in a
+         Fayetteville-area subdivision, open blue sky on the left where the copy sits. -->
+    <img src="images/hero.jpg" alt="Roofing crew tearing off old shingles and laying underlayment on a house with grey siding under a blue sky" class="hero-img absolute inset-0 -z-10 w-full h-full object-cover object-[65%_60%]">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-950/80 via-brand-950/55 to-brand-950/20"></div>
+    <!-- Client tweak: under 640px the hero copy spans the full width and sits on top of the photo; a light even tint keeps it
+         readable on phones only (same as Roofing World). Backport candidate for the template. -->
+    <div class="absolute inset-0 -z-10 bg-brand-950/40 sm:hidden"></div>
+
+    <!-- Left-aligned copy block: eyebrow, big condensed headline, paragraph -->
+    <!-- Client tweak: pb-32 under 640px so the slide dots (bottom-24) never sit on the paragraph on short phones; pb-28 on short (<=720px tall) desktop screens for the same reason; headline one step smaller on landscape phones (<=480px tall). Backport candidates for the template -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 sm:py-24 lg:[@media(max-height:720px)]:pb-28">
+      <div class="max-w-xl hero-in">
+        <!-- Facebook cover: "Specializing in roof repairs & replacements, siding repair and installations, and painting." -->
+        <p class="text-brand-500 font-bold uppercase tracking-[0.12em] text-xs sm:text-sm">Roofing &middot; Siding &middot; Painting &middot; <span class="whitespace-nowrap">Fayetteville, NC</span></p>
+        <!-- Their old website's homepage banner: "SAS specializes in storm damage repairs and roofing" -->
+        <h1 class="font-headline font-bold uppercase text-white text-5xl max-[399px]:text-[42px] max-[359px]:text-[37px] max-[319px]:text-[32px] max-[289px]:text-[29px] sm:text-6xl sm:[@media(max-height:480px)]:text-5xl lg:text-7xl leading-[0.95] mt-3">
+          Storm Damage Repairs &amp; Roofing
+        </h1>
+        <!-- Old website: "Let us help you with your insurance claims or denied claims!", "Call us at 910.973.3557 for a No Cost
+             Inspection"; Google review: "SAS was fast and helped me with all the insurance paperwork" -->
+        <p class="text-white/90 text-base sm:text-lg leading-relaxed mt-6 max-w-lg">
+          Roof repairs and replacements, siding and painting, with help on your insurance claim from the first inspection to the last of the paperwork. Call to set up <strong class="font-bold text-white">a no-cost inspection.</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide dots (static for now; wire up when more than one hero image exists) -->
+    <div class="absolute bottom-24 sm:bottom-20 left-1/2 -translate-x-1/2 flex gap-2" aria-hidden="true">
+      <span class="w-3.5 h-3.5 rounded-full bg-white"></span>
+      <span class="w-3.5 h-3.5 rounded-full border-2 border-white/80"></span>
+    </div>
+  </section>
+
+  <!-- STATS CARD: overlaps the bottom edge of the hero. Only list stats the client can back up (5 tiles, the template default). -->
+  <section class="relative z-10 -mt-14 sm:-mt-16 px-4 sm:px-6 lg:px-8 pb-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-xl ring-1 ring-slate-200/70 p-3 sm:p-4 reveal">
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- star: Google 5.0 from 9 reviews (Oct 2026) -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">5.0</p>
+          <p class="text-[13px] text-slate-600 mt-2">Google Rating</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- thumbs-up: Google shows 9 reviews, all five stars (Oct 2026) -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v11H3.5V10H7Z"/><path d="M7 10l4-7.5a2.3 2.3 0 0 1 2.6 2.8L12.8 9h5.6a2 2 0 0 1 2 2.4l-1.6 7.8a2 2 0 0 1-2 1.8H7"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">9</p>
+          <p class="text-[13px] text-slate-600 mt-2">Five-Star Google Reviews</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- search: old website "we will provide a no-cost inspection", "Call us at 910.973.3557 for a No Cost Inspection" -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">$0</p>
+          <p class="text-[13px] text-slate-600 mt-2">No-Cost Inspection</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- file: old website "Insurance Claims" page: "Let us help you with your insurance claims or denied claims!" -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8Z"/><path d="M14 2.5V8h5.5"/><path d="m9 14.5 2 2 4-4"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">Claims</p>
+          <p class="text-[13px] text-slate-600 mt-2">Insurance Claim Help</p>
+        </div>
+
+        <div class="col-span-2 lg:col-span-1 bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- shield: old website "we offer a discount for all military and first responders" (2019; CONFIRM it still runs) -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7.5-3.5 7.5-9.5V5.5L12 2.5l-7.5 3V12c0 6 7.5 9.5 7.5 9.5Z"/><path d="m12 7.5 1.3 2.7 2.9.4-2.1 2 .5 2.9-2.6-1.4-2.6 1.4.5-2.9-2.1-2 2.9-.4Z"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">Military</p>
+          <p class="text-[13px] text-slate-600 mt-2">&amp; First Responder Discount</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BRANDS: logos scroll right to left, edges blurred. Only list brands the client is actually certified with / carries. -->
+  <section class="pb-14 reveal-fade" aria-label="What we do">
+    <div class="relative max-w-6xl mx-auto overflow-hidden">
+      <div class="marquee-track flex w-max items-center">
+        <!-- Set 1 -->
+        <!-- No manufacturer certifications or brands found; the strip lists their trades, word for word from the old website
+             ("Roofing", "Siding", "Painting", "Flooring", "Gutters", "Carpentry & Remodeling", "handyman services",
+             "Insurance Claims"). -->
+        <ul class="flex shrink-0 items-center gap-16 pr-16">
+          <li class="brand-logo">Roofing</li>
+          <li class="brand-logo">Insurance Claims</li>
+          <li class="brand-logo">Siding</li>
+          <li class="brand-logo">Painting</li>
+          <li class="brand-logo">Flooring</li>
+          <li class="brand-logo">Gutters</li>
+          <li class="brand-logo">Carpentry &amp; Remodeling</li>
+          <li class="brand-logo">Handyman Services</li>
+        </ul>
+        <!-- Set 2: exact duplicate for a seamless loop -->
+        <ul class="flex shrink-0 items-center gap-16 pr-16" aria-hidden="true">
+          <li class="brand-logo">Roofing</li>
+          <li class="brand-logo">Insurance Claims</li>
+          <li class="brand-logo">Siding</li>
+          <li class="brand-logo">Painting</li>
+          <li class="brand-logo">Flooring</li>
+          <li class="brand-logo">Gutters</li>
+          <li class="brand-logo">Carpentry &amp; Remodeling</li>
+          <li class="brand-logo">Handyman Services</li>
+        </ul>
+      </div>
+
+      <!-- Blurred + faded side edges -->
+      <div class="marquee-edge left-0 bg-gradient-to-r from-white to-transparent" style="-webkit-mask-image:linear-gradient(to right,#000 30%,transparent);mask-image:linear-gradient(to right,#000 30%,transparent)"></div>
+      <div class="marquee-edge right-0 bg-gradient-to-l from-white to-transparent" style="-webkit-mask-image:linear-gradient(to left,#000 30%,transparent);mask-image:linear-gradient(to left,#000 30%,transparent)"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES: copy on the left, round photo collage on the right (4 quarter-circle segments,
+       floating badge + info card). Collage photos: all 8 REAL (their Facebook album, Feb 2021, and Google Business photos):
+       roofs, a repainted house, siding and a window, new floors, a deck and a bathroom. Float = their logo mark. -->
+  <section id="services" class="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-sky-50 via-white to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[auto_1fr_16rem]">
+
+      <!-- Left: copy -->
+      <div class="col-span-full lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:max-w-md xl:max-w-xl mb-8 lg:mb-0 lg:pb-3 reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">Our Services</p>
+        <!-- Old website: "No job too big or small" -->
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl max-[359px]:text-[32px] max-[299px]:text-[28px] sm:text-5xl leading-[1.02] mt-3">No Job Too Big or&nbsp;Small</h2>
+        <!-- Old website, "Our Services": "our team of professionals specializes in roof repairs and replacements, siding repair, and
+             installations as well as painting. Don't let pricing stop your family from getting the service you need, call today
+             for our free on-site inspection and ask about our military and first responder discount." + homepage "Features":
+             Flooring, Gutters, Carpentry & Remodeling, handyman services. -->
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5 max-w-lg">Our team specializes in roof repairs and replacements, siding repair and installation, and painting, with flooring, gutters, carpentry, remodeling and handyman work on top. Don&rsquo;t let pricing stop your family from getting the service you need: call for a free on-site inspection, and ask about our military and first responder&nbsp;discount.</p>
+
+      </div>
+
+      <!-- Right: round collage -->
+      <div id="svc-circle" class="relative z-10 mx-auto lg:mx-0 mb-10 lg:mb-5 lg:-mt-16 w-full max-w-[460px] aspect-square col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:justify-self-end reveal-fade">
+
+        <!-- The circle: 2x2 grid clipped round; the grid gap makes the white cross -->
+        <div class="absolute inset-0 rounded-full overflow-hidden grid grid-cols-2 grid-rows-2 gap-1.5 bg-white shadow-xl ring-1 ring-slate-200/60">
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+          <!-- All 4 quarters are photos. Never use a solid/patterned brand-colour quarter here (client rule, 2026-09-26). -->
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-3.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-4.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+        </div>
+
+        <!-- Floating round photo, top-left -->
+        <img src="images/logo-mark.png" alt="" loading="lazy" class="absolute -top-2 left-[6%] w-14 h-14 sm:w-16 sm:h-16 rounded-full object-contain p-1.5 bg-white ring-4 ring-white shadow-lg">
+        <!-- Floating round badge, bottom-right: the lightning bolt from their logo -->
+        <span class="absolute bottom-[8%] -right-1 sm:right-0 grid place-items-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-600 text-white ring-4 ring-white shadow-lg" aria-hidden="true">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 2.5 5 13.5h6l-1 8 8.5-11h-6Z"/></svg>
+        </span>
+
+        <!-- Floating card, left edge: Google rating (5.0 from 9 reviews, Oct 2026) -->
+        <div class="absolute left-0 sm:-left-10 top-[58%] bg-white rounded-lg shadow-xl ring-1 ring-slate-200/70 px-4 py-3">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Google<span class="max-[299px]:hidden"> Rating</span></p>
+          <div class="flex items-center gap-2 mt-0.5">
+            <span class="font-headline font-bold text-2xl leading-none text-slate-800">5.0</span>
+            <span class="text-amber-400 text-lg leading-none tracking-wide" aria-label="out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE TILES: 6 photo tiles. On desktop tiles 1-2 rise to fill the space beside/under the text and circle
+           (grid rows adapt to the paragraph length); tiles 2 and 3 have a curved edge that follows the circle.
+           Services = their old website and Facebook cover: Roofing, Insurance Claims (own page), Siding, Painting, Flooring,
+           and "Carpentry & Remodeling" (bathroom remodels in two of the reviews). Photos: all 6 REAL (Facebook album Feb 2021,
+           Google Business photos). -->
+
+
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-1 lg:row-start-2 lg:row-span-2 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-roofing.jpg" alt="Finished grey architectural shingle roof on a single-storey house with grey siding" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_40%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Roofing</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-2 lg:row-start-2 lg:row-span-2 cut-svc overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-insurance-claims.jpg" alt="Roofers stripping storm-worn shingles and laying new underlayment on a house roof" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_40%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Insurance Claims</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-3 lg:row-start-2 lg:row-span-2 cut-svc overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-siding.jpg" alt="Freshly painted lap siding around a new white double-hung window" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_45%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Siding</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-1 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-painting.jpg" alt="Repaired and freshly painted garage wall in light grey above a brick base" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_50%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Painting</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-2 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-flooring.jpg" alt="Empty living room with new dark wood-look plank flooring, a brick fireplace and French doors" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_70%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Flooring</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-3 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-remodeling.jpg" alt="Remodeled bathroom with a white tub surround, new toilet and marble-look tile floor" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_75%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Remodeling</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT US: big quote + statement + who said it on the left, wide team photo on the right.
+       Use a real quote from the owner/manager. -->
+  <section id="about" class="relative py-16 sm:py-24 bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center">
+
+      <!-- Left: quote -->
+      <div class="reveal">
+        <!-- Opening quote mark -->
+        <svg class="w-14 h-14 sm:w-16 sm:h-16 text-brand-600 rotate-180" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.570-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4V3h9.983Zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983V3H24Z"/></svg>
+
+        <!-- Their own words, the old website's About Us: "A durable structure gives you peace of mind and that's always our goal
+             at SAS Renovation." (comma added, "at SAS Renovation" shown below as the attribution) -->
+        <h2 class="font-headline font-medium uppercase text-slate-700 text-4xl max-[359px]:text-[30px] max-[299px]:text-[26px] sm:text-5xl leading-[1.05] mt-8">A durable structure gives you peace of mind, and that&rsquo;s always our goal.</h2>
+
+        <!-- Who said it -->
+        <div class="flex items-center gap-4 mt-10">
+          <!-- Closing quote mark -->
+          <svg class="w-11 h-11 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.570-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4V3h9.983Zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983V3H24Z"/></svg>
+          <div>
+            <!-- No owner named anywhere public (reviews thank "Scott", "Diamond" and "Edgar and his crew"): the company is
+                 credited until the owner confirms a name and title. -->
+            <p class="font-bold text-lg text-slate-800 leading-tight">SAS Renovation Inc.</p>
+            <p class="text-sm text-slate-600">Fayetteville, North Carolina</p>
+          </div>
+        </div>
+
+        <hr class="mt-8 border-slate-300">
+
+        <div class="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <a href="#projects" class="btn-arrow inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-base px-6 py-3 rounded-sm transition-colors">
+            About Us
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </a>
+          <a href="tel:9109733557" class="inline-flex items-center gap-2 font-headline font-medium uppercase tracking-wide text-base text-slate-800 hover:text-brand-600 transition-colors">
+            (910) 973-3557
+            <svg class="w-4 h-4 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: REAL photo from their Facebook album (Feb 2021): a crew member up on the roof of a freshly repainted white house,
+           ladder and paint buckets below (ask for a team photo before launch). -->
+      <div class="drop-shadow-xl photo-hover reveal" style="--reveal-delay:120ms"><img src="images/about-crew.jpg" alt="SAS crew member working on the roof of a freshly painted white house with blue-grey shutters, ladder and paint buckets below" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[16/11] object-cover object-[40%_50%]"></div>
+
+
+    </div>
+    <!-- Roof peak: the next section's white rises into this one -->
+    <div class="roof-peak" aria-hidden="true"></div>
+  </section>
+
+  <!-- OUR PROJECTS: alternating rows (text + bullets beside a photo).
+       All three photos are REAL (Facebook album Feb 2021 and Google Business photos). No towns or write-ups were posted, so
+       the rows describe what the photos show. CONFIRM the descriptions (and that the deck is their job) with the owner. -->
+  <section id="projects" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">Recent Work</p>
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl max-[359px]:text-[32px] max-[299px]:text-[27px] sm:text-5xl leading-[1.02] mt-3">Roofs, Walls &amp; Decks, Done&nbsp;Right</h2>
+        <!-- Old website: "Neat, cost-efficient and thorough is the standard we work hard to maintain" -->
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5">A few jobs from our own photos around Fayetteville. Neat, cost-efficient and thorough is the standard we work hard to maintain, on every project, big or&nbsp;small.</p>
+      </div>
+
+      <!-- Alternating rows: text left / image right, then image left / text right, and so on.
+           To add a project, copy a row; odd rows have the text first (image on the right), even rows have the image first. -->
+      <div class="mt-12 sm:mt-14 space-y-10 sm:space-y-12">
+
+        <!-- Project 1: text left, image right. REAL (Facebook, Feb 2021): two crew members finishing new dark architectural
+             shingles on a two-level roof, weather barrier at the eaves, Fayetteville-area subdivision below. -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center reveal">
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Recent Job &middot; Roof Replacement
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">A New Roof, Slope by&nbsp;Slope</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">Our crew re-roofing a two-level home: weather barrier along the eaves, new architectural shingles across every slope, and the ridge finished last. Roofing isn&rsquo;t just another service we offer, it&rsquo;s what we have specialized in for&nbsp;years.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Old roof torn off</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Weather barrier at the eaves</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New architectural shingles</li>
+            </ul>
+          </div>
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-new-roof.jpg" alt="Two roofers finishing new dark architectural shingles on a two-level roof above a street of homes" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_50%]"></div>
+        </article>
+
+        <!-- Project 2: image left, text right. REAL (Facebook, Feb 2021): a garage wall soaked and mold-stained by a hidden
+             leak, opened up at the pipes (the "before"; the same album shows a repaired, freshly painted garage wall). -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-14 items-center reveal">
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-garage-wall.jpg" alt="Water-stained, mold-spotted garage wall opened up around the plumbing above a brick base" loading="lazy" class="cut-tr w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_45%]"></div>
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Recent Job &middot; Water Damage
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">A Hidden Leak Behind the&nbsp;Wall</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">A slow leak had soaked this garage wall and left it stained and spotted. We open the wall up at the source, replace the damaged drywall, then patch, prime and paint, so the room looks the way it did before the&nbsp;water.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Wall opened at the leak</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Damaged drywall replaced</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Patched, primed and painted</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3: text left, image right. On their Google Business listing (uploader not shown; CONFIRM it is their job):
+             a backyard deck and railing in a fresh red-brown stain. -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center reveal">
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Recent Job &middot; Carpentry
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">A Backyard Deck, Restained</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">Decks, railings and the honey-do list for the season are part of the job too. This deck and its railing were finished in an even red-brown stain that protects the wood and makes the backyard feel new&nbsp;again.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Deck and railing prepped</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Even coat of stain</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Carpentry and handyman work</li>
+            </ul>
+          </div>
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-deck.jpg" alt="Backyard wooden deck and railing finished in a red-brown stain beside a house with white siding" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_55%]"></div>
+        </article>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="#contact" class="inline-flex items-center border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white font-bold text-sm uppercase tracking-wide px-7 py-3 rounded-md transition-colors">Free Inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS: heading + horizontally scrolling review cards that hang over a dark band at the bottom.
+       Use real reviews only (copy each <article>). Cards keep their natural height, so short and long reviews both work.
+       Sources (Oct 2026): Google 5.0 / 9 reviews (only 3 readable logged out, all used here) + 1 Facebook recommendation
+       (Facebook: 82% recommend, 6 reviews). Ask permission before launch, and ask for the other 6 Google reviews. -->
+  <section id="reviews" class="relative bg-slate-100 pt-16 sm:pt-20 pb-24 border-t border-slate-200">
+    <!-- Dark band the cards overlap (the footer picks up from here) -->
+    <div class="absolute inset-x-0 bottom-0 h-48 bg-brand-900" aria-hidden="true"></div>
+
+    <div class="relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end justify-between gap-6 reveal">
+        <h2 class="font-headline font-medium uppercase text-slate-800 text-3xl max-[359px]:text-[26px] sm:text-4xl lg:text-[2.6rem] leading-[1.1] max-w-3xl">What Our Customers Say</h2>
+        <!-- Arrows -->
+        <div class="hidden sm:flex shrink-0 gap-2">
+          <button type="button" id="reviews-prev" class="grid place-items-center w-11 h-11 rounded-full bg-white text-slate-700 ring-1 ring-slate-300 hover:bg-brand-600 hover:text-white hover:ring-brand-600 transition-colors" aria-label="Previous reviews">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+          </button>
+          <button type="button" id="reviews-next" class="grid place-items-center w-11 h-11 rounded-full bg-white text-slate-700 ring-1 ring-slate-300 hover:bg-brand-600 hover:text-white hover:ring-brand-600 transition-colors" aria-label="Next reviews">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Track: starts aligned with the page container and runs off the right edge -->
+      <div id="reviews-track" class="reviews-track mt-10 flex items-start gap-5 overflow-x-auto snap-x snap-mandatory pb-2 reveal-fade" style="--reveal-delay:100ms">
+        <!-- Google, Ryan Hansen, 5 stars, about 2019. Word for word. -->
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-amber-400 text-2xl tracking-[0.2em] leading-none" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="text-slate-700 text-[15px] leading-relaxed mt-5">This was a great experience! Getting leaks through the ceiling is never a good sign, but SAS was fast and helped me with all the insurance paperwork as well. The new roof looks great! Friendly and fast, I highly recommend&nbsp;SAS.</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5Z"/><path fill="#FBBC05" d="M10.5 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1Z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48Z"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Ryan H.</p>
+              <p class="text-sm text-slate-500">New Roof &middot; Insurance Claim</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Google, Ryan Baucom, 5 stars, about 2019. Word for word. -->
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-amber-400 text-2xl tracking-[0.2em] leading-none" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="text-slate-700 text-[15px] leading-relaxed mt-5">Scott and Diamond were extremely helpful from the first call to the completion of the job. We had new floors installed throughout the home, a complete bathroom remodel, etc. All the work was beautiful and I am completely satisfied - would absolutely recommend SAS Renovation to anyone looking to renovate their home or have a new roof installed.&nbsp;A++++</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5Z"/><path fill="#FBBC05" d="M10.5 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1Z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48Z"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Ryan B.</p>
+              <p class="text-sm text-slate-500">New Floors &amp; Bathroom Remodel</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Google, Edward Smith, 5 stars, about 2019. Word for word (double spaces after full stops removed). -->
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-amber-400 text-2xl tracking-[0.2em] leading-none" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="text-slate-700 text-[15px] leading-relaxed mt-5">Needed to get a rental house restored and ready for sale. Scott and his guys came in and in a couple of weeks had the exterior repaired and painted, the interior walls repaired and painted, new flooring, new vanities and lights. The attention to detail was excellent and we received great comments from the open house. Diamond keeps track of everything in great detail - which is a real plus when you are far away from the&nbsp;project.</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5Z"/><path fill="#FBBC05" d="M10.5 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1Z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48Z"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Edward S.</p>
+              <p class="text-sm text-slate-500">Rental House Restoration</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Facebook recommendation, Billie Glover, 26 Mar 2021 (no stars on Facebook; Facebook mark instead of the Google "G"). Her first two sentences, word for word; the rest is behind "See more" when logged out. -->
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">This company did such a wonderful job of taking over and finishing my bathroom renovation that I can not help but share my praise for their work. When I think of people who actually enjoy what they do, I will always remember Edgar and his&nbsp;crew.</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 24v-8.4h2.8l.4-3.3h-3.2v-2.1c0-.9.3-1.6 1.6-1.6h1.7V5.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.2v3.3H10V24h3.4Z"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Billie G.</p>
+              <p class="text-sm text-slate-500">Recommends &middot; Facebook</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS: dark panel, copy on the left, dotted map with city dots on the right.
+       Map = Cumberland County, NC, home of their Fayetteville office (us-atlas counties-10m via
+       topojson-client; equirectangular, x scaled by cos 35.05°, centre -78.8050 / 35.0513, 1351.4 px per degree:
+       X% = (500 + (lon + 78.8050) * 0.8186 * 1351.4) / 10, Y% = (310 - (lat - 35.0513) * 1351.4) / 6.2).
+       Facebook intro: "proudly servicing the Fayetteville and sur[rounding areas]" (no town list anywhere), so only Fayetteville
+       gets a dot. ASK which towns they cover and add a dot for each. -->
+  <section id="areas" class="bg-slate-100 py-14 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-sm bg-brand-900 shadow-xl reveal">
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-6 items-center p-7 sm:p-12 lg:p-16">
+
+          <!-- Left: copy -->
+          <div class="relative z-10">
+            <h2 class="font-headline font-medium uppercase text-white text-4xl max-[359px]:text-[30px] max-[299px]:text-[26px] sm:text-5xl lg:text-6xl leading-[1.02]">Serving Fayetteville</h2>
+            <p class="text-[#f9ea8a] font-semibold text-lg sm:text-xl leading-snug mt-6 max-w-lg">Fayetteville and the surrounding&nbsp;area.</p>
+            <p class="text-white/75 text-sm sm:text-base leading-relaxed mt-5 max-w-lg">Based in our office on Ridgeway Drive and working across Cumberland County. Not sure we cover your street? Call <span class="whitespace-nowrap">(910) 973-3557</span> and&nbsp;ask.</p>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-base px-6 py-3 rounded-sm transition-colors">
+              Free Inspection
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: map. Dots are positioned in % of this box, so they stay put at every size. -->
+          <div class="relative w-full aspect-[1000/620] lg:scale-[1.12] lg:origin-center">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1000 620" aria-hidden="true">
+              <defs>
+                <pattern id="areaDots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2b4f6a"/></pattern>
+                <clipPath id="areaClip">
+                  <!-- Cumberland County, NC -->
+                  <path d="M174,144 178,120 286,89 417,67 476,28 587,19 706,48 695,147 659,274 675,390 758,463 842,574 802,581 508,581 393,601 333,497 242,444 246,430 186,323 158,209 174,144Z"/>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#areaClip)"><rect width="1000" height="620" fill="url(#areaDots)"/></g>
+            </svg>
+
+            <!-- City dots: the city name shows on hover / keyboard focus. -->
+            <a href="#contact" class="area-dot group" style="left:41.9%;top:49.7%" aria-label="Fayetteville, North Carolina"><span class="area-tip">Fayetteville</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FREE ESTIMATE: info cards on the left, estimate form on the right (structure from layout 1).
+       The form has no backend yet: point <form action> at the client's form handler (or Formspree etc.) and remove the demo script. -->
+  <section id="contact" class="bg-white py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 items-start">
+
+      <!-- Left: info -->
+      <div class="lg:col-span-5 reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">Get In Touch</p>
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl max-[359px]:text-[32px] sm:text-5xl leading-[1.02] mt-3">Book a No-Cost Inspection</h2>
+        <!-- Old website: "Need your roof repaired or replaced? If your insurance company had denied you sign up now for a future,
+             no-cost inspection so we can see about servicing you. You may not even have an out-of-pocket cost. Call now!" -->
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5">Need your roof repaired or replaced, even after your insurance company said no? Call for a <span class="whitespace-nowrap">no-cost</span> inspection and we will see what we can do. You may not even have an out-of-pocket&nbsp;cost.</p>
+
+        <!-- Office address and phone from Google + Facebook (same on the old website). Hours: Google "Opens 8 AM" (days not listed).
+             Email office@sasrenovation.com is LEFT OFF: the sasrenovation.com domain has lapsed (no DNS), so mail to it bounces.
+             4th card = their military and first responder discount (old website, 2019; CONFIRM it still runs). -->
+        <div class="mt-8 space-y-3">
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Office</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800">118 Ridgeway Dr, Suite 201-A<br>Fayetteville, <span class="whitespace-nowrap">NC 28311</span></p>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Call the Office</p>
+              <a href="tel:9109733557" class="inline-block py-2 -my-2 text-base font-extrabold text-slate-800 hover:text-brand-600 transition-colors">(910) 973-3557</a>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7.5-3.5 7.5-9.5V5.5L12 2.5l-7.5 3V12c0 6 7.5 9.5 7.5 9.5Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Military &amp; First Responders</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800">Ask about our discount</p>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3Z"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Facebook</p>
+              <a href="https://www.facebook.com/SASRenovation/" target="_blank" rel="noopener" class="inline-block py-2 -my-2 text-sm sm:text-base font-bold text-slate-800 hover:text-brand-600 transition-colors break-words">SAS Renovation Inc.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form card -->
+      <div class="lg:col-span-7 reveal" style="--reveal-delay:100ms">
+        <div class="relative overflow-hidden rounded-md bg-white ring-1 ring-slate-200 shadow-xl p-7 sm:p-10">
+          <div class="absolute inset-x-0 top-0 h-1.5 bg-brand-600"></div>
+
+          <div class="mb-7">
+            <h3 class="font-headline font-semibold uppercase text-slate-800 text-3xl max-[379px]:text-[26px] max-[319px]:text-[22px]">Request an Inspection</h3>
+            <p class="text-sm text-slate-500 mt-1.5">Roofing &middot; Siding &middot; Painting &middot; Flooring</p>
+          </div>
+
+          <form id="estimate-form" class="space-y-4" action="#" method="post">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="est-name" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Full Name *</label>
+                <input id="est-name" name="name" type="text" required autocomplete="name" placeholder="John Doe" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+              <div>
+                <label for="est-phone" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Phone Number *</label>
+                <input id="est-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(555) 000-0000" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="est-email" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Email Address *</label>
+                <input id="est-email" name="email" type="email" required autocomplete="email" placeholder="john@example.com" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+              <div>
+                <label for="est-service" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Service Needed *</label>
+                <select id="est-service" name="service" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+                  <option value="">Select a service</option>
+                  <option>Roofing</option>
+                  <option>Insurance Claims</option>
+                  <option>Siding</option>
+                  <option>Painting</option>
+                  <option>Flooring</option>
+                  <option>Remodeling</option>
+                  <option>Gutters</option>
+                  <option>Handyman Services</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="est-address" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Property Address</label>
+              <input id="est-address" name="address" type="text" autocomplete="street-address" placeholder="123 Main St, City, ST" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+            </div>
+
+            <div>
+              <label for="est-details" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Project Details</label>
+              <textarea id="est-details" name="details" rows="3" placeholder="Tell us about the damage or the project..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-lg py-3.5 rounded-md shadow-md transition-colors">
+              Send My Request
+            </button>
+            <p id="estimate-status" class="hidden rounded-md bg-brand-600/10 text-brand-700 text-sm font-semibold px-4 py-3" role="status">Thanks! Your request was received &mdash; we&rsquo;ll call you back to set up your no-cost inspection. Prefer to talk? Call (910) 973-3557.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER: standard roofing footer (top bar, 4 link columns, bottom bar). Only list services, areas and pages the client really has. -->
+  <footer class="relative bg-brand-950 text-white/60 text-sm">
+    <!-- Roof peak rising into the section above -->
+    <div class="roof-peak-up" aria-hidden="true"></div>
+
+    <!-- Top bar: brand, phone, CTA -->
+    <div class="border-b border-brand-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+        <a href="#top" class="flex items-center gap-3">
+          <!-- {{LOGO}}: the same real logo mark as the header, on a small white tile so the silver letters read on the dark footer -->
+          <span class="grid place-items-center shrink-0 w-11 h-11 rounded-lg bg-white ring-1 ring-white/25"><img src="images/logo-mark.png" alt="" class="w-9 h-auto"></span>
+          <span class="leading-none">
+            <span class="block font-display font-extrabold uppercase text-[23px] max-[319px]:text-[19px] tracking-[0.02em] text-white whitespace-nowrap">SAS Renovation</span>
+            <span class="block text-[9px] font-bold tracking-[0.16em] uppercase text-white/55 mt-1 whitespace-nowrap">Inc. &middot; Fayetteville, NC</span>
+          </span>
+        </a>
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+          <a href="tel:9109733557" class="font-extrabold text-xl text-white hover:text-brand-500 transition-colors">(910) 973-3557</a>
+          <a href="#contact" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-3 rounded-md transition-colors text-xs uppercase tracking-wider shadow-md">Free Inspection</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-2 md:grid-cols-4 gap-10" data-stagger>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Services</h4>
+        <ul class="space-y-2.5">
+          <!-- one <li> per real service (old website + Facebook cover) -->
+          <li><a href="#services" class="hover:text-white transition-colors">Roofing</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Storm Damage Repairs</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Insurance Claims</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Siding</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Painting</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Flooring</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Gutters</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Carpentry &amp; Remodeling</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Handyman Services</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Service Areas</h4>
+        <ul class="space-y-2.5">
+          <!-- one <li> per area (Facebook: "the Fayetteville and surrounding areas"; no town list) -->
+          <li><a href="#areas" class="hover:text-white transition-colors">Fayetteville</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Cumberland County</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Surrounding Areas</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Company</h4>
+        <ul class="space-y-2.5">
+          <!-- mirror the site's real sections only -->
+          <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+          <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Service Area</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Contact</h4>
+        <p class="leading-relaxed mb-3">118 Ridgeway Dr, Suite 201-A<br>Fayetteville, NC 28311</p>
+        <a href="tel:9109733557" class="block hover:text-white transition-colors">(910) 973-3557</a>
+        <a href="https://www.facebook.com/SASRenovation/" target="_blank" rel="noopener" class="block mt-1 hover:text-white transition-colors">Find us on Facebook</a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-brand-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/45 text-center sm:text-left">
+        <span>&copy; 2026 SAS Renovation Inc. All rights reserved.</span>
+        <span>Storm damage repairs and&nbsp;roofing</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* ===== Motion & interaction layer (client-specific; layout, spacing and type untouched) ===== */
+    /* Anchor links glide, and stop below the 80px sticky header instead of under it */
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    :focus-visible { outline: 2px solid #21689a; outline-offset: 3px; }
+
+    /* Scroll reveal: content eases up/in once as it enters the viewport (hidden only while JS runs) */
+    .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.16,.8,.3,1), transform .7s cubic-bezier(.16,.8,.3,1); transition-delay: var(--reveal-delay, 0ms); }
+    /* Opacity-only for the services circle/tiles: the curved-cutout script measures live positions */
+    .js .reveal-fade { opacity: 0; transition: opacity .7s ease-out; transition-delay: var(--reveal-delay, 0ms); }
+    .js .reveal.is-visible, .js .reveal-fade.is-visible { opacity: 1; transform: none; }
+
+    /* Hero: photo settles from a slight zoom, copy lines rise in one after another */
+    .hero-img { animation: hero-zoom 1.8s cubic-bezier(.2,.7,.2,1) both; }
+    .hero-in > * { animation: rise-in .8s cubic-bezier(.16,.8,.3,1) both; }
+    .hero-in > :nth-child(2) { animation-delay: .12s; }
+    .hero-in > :nth-child(3) { animation-delay: .24s; }
+    @keyframes hero-zoom { from { transform: scale(1.07); } to { transform: scale(1); } }
+    @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+    /* Header deepens its shadow once the page scrolls */
+    #site-header { transition: box-shadow .3s ease; }
+    #site-header.is-scrolled { box-shadow: 0 8px 24px -12px rgba(9,27,40,.35); }
+
+    /* Desktop nav: underline slides in under the hovered link */
+    header nav > a, header nav > .group > button { position: relative; }
+    header nav > a::after, header nav > .group > button::after { content: ""; position: absolute; left: 0; right: 0; bottom: 16px; height: 2px; background: #e2c414; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+    header nav > a:hover::after, header nav > .group:hover > button::after, header nav > .group:focus-within > button::after { transform: scaleX(1); }
+    /* Dropdowns drop in slightly instead of just appearing */
+    header nav .group > div { transform: translateY(6px); transition: opacity .2s ease, transform .2s ease, visibility .2s; }
+    header nav .group:hover > div, header nav .group:focus-within > div { transform: none; }
+
+    /* Mobile drawer: slides open/closed instead of snapping */
+    @media (max-width: 1023.98px) {
+      #mobile-menu { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden; border-top-width: 0; transition: grid-template-rows .32s ease, opacity .25s ease, visibility .32s; }
+      #mobile-menu.is-open { grid-template-rows: 1fr; opacity: 1; visibility: visible; border-top-width: 1px; }
+      /* the inner list's own py-3 padding would otherwise leave a 24px strip when "closed" */
+      .mobile-menu-inner { min-height: 0; overflow: hidden; padding-top: 0; padding-bottom: 0; transition: padding .32s ease; }
+      #mobile-menu.is-open .mobile-menu-inner { max-height: calc(100vh - 92px); max-height: calc(100dvh - 92px); overflow-y: auto; overscroll-behavior: contain; padding-top: .75rem; padding-bottom: .75rem; }
+    }
+    .menu-btn .bar { transform-box: fill-box; transform-origin: center; transition: transform .3s ease, opacity .2s ease; }
+    .menu-btn[aria-expanded="true"] .bar-1 { transform: translateY(5px) rotate(45deg); }
+    .menu-btn[aria-expanded="true"] .bar-2 { opacity: 0; }
+    .menu-btn[aria-expanded="true"] .bar-3 { transform: translateY(-5px) rotate(-45deg); }
+
+    /* Buttons: every solid brand button gets a small lift + press */
+    a.bg-brand-600, button.bg-brand-600 { transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+    a.bg-brand-600:active, button.bg-brand-600:active { transform: translateY(0) scale(.98); }
+    .btn-arrow svg, a[href^="tel:"] > svg:last-child, a.bg-brand-600 > svg:last-child { transition: transform .2s ease; }
+
+    /* Review arrows: dim at the start/end of the row */
+    #reviews-prev:disabled, #reviews-next:disabled { opacity: .4; pointer-events: none; }
+    /* Client tweak (from HV Roofing): only 1 card, so hide the arrows when neither can scroll */
+    div:has(> #reviews-prev:disabled + #reviews-next:disabled) { display: none !important; }
+
+    /* Form: success message fades in, button shows a sending state */
+    #estimate-status:not(.hidden) { animation: rise-in .45s ease both; }
+    #estimate-form button[type="submit"][aria-busy="true"] { opacity: .75; cursor: progress; }
+
+    /* Footer links nudge right; a little invisible padding makes them easier to tap without moving anything */
+    footer ul a { display: inline-block; padding: 3px 0; margin: -3px 0; transition: color .2s ease, transform .2s ease; }
+    footer .md\:grid-cols-4 > div:last-child > a { padding: 3px 0; margin: -3px 0; }
+    /* Contact cards: phone and email links get a taller tap area without moving anything */
+    .info-card a[href^="tel:"], .info-card a[href^="mailto:"] { display: inline-block; padding: 8px 0; margin: -8px 0; }
+    /* ...but the email keeps the template's truncate on narrow phones (inline-block needs a max-width for the ellipsis to apply) */
+    .info-card a[href^="mailto:"] { max-width: 100%; vertical-align: top; }
+    /* Reviews: the "Leave a Google Review" link gets a taller tap area without moving anything */
+    #reviews a[href^="https:"] { display: inline-block; padding: 9px 0; margin: -9px 0; }
+    /* About: the phone link next to the button gets the same taller tap area */
+    #about a[href^="tel:"] { padding: 10px 0; margin: -10px 0; }
+    /* Map dots: bigger invisible hit area for fingers (the visible dot stays 14px). The zone is sized by script (--hit) to half the gap to the nearest dot, so close towns never steal each other's taps (kept from the Wellson build) */
+    .area-dot::before { content: ""; position: absolute; inset: calc(var(--hit, 12px) * -1); border-radius: 9999px; }
+    /* Phones and every touch screen (landscape phones and iPads are 640px+): 16px form text stops iOS Safari zooming the page when a field is tapped */
+    @media (max-width: 639.98px), (pointer: coarse) { #estimate-form input, #estimate-form select, #estimate-form textarea { font-size: 16px; } }
+    /* Touch screens: footer links and phone numbers get ~30px hit areas (rows sit 30px apart, so the areas meet without overlapping); header phone gets a taller tap zone */
+    @media (pointer: coarse) {
+      footer ul a, footer .md\:grid-cols-4 > div:last-child > a { padding: 5px 0; margin: -5px 0; }
+      footer a[href^="tel:"].text-xl { display: inline-block; padding: 8px 0; margin: -8px 0; }
+      header a[href^="tel:"].md\:block { padding: 10px 0; margin: -10px 0; }
+    }
+    /* Landscape phones (short screens, 640px+ wide): a little more room under the hero copy so the slide dots never touch the paragraph */
+    @media (min-width: 640px) and (max-height: 500px) { .cut-hero > div.max-w-7xl { padding-bottom: 7.5rem; } }
+    /* Same for short tablet-landscape screens below 1024px (720x540 left only ~12px between the dots and the copy) */
+    @media (min-width: 640px) and (max-width: 1023.98px) and (max-height: 640px) { .cut-hero > div.max-w-7xl { padding-bottom: 7.5rem; } }
+    /* Phones: the map is small and the dots sit close together, so the dots shrink a little to stay apart (their tap zones are sized by the script below) */
+    @media (max-width: 639.98px) { a.area-dot { width: 10px; height: 10px; margin: -5px 0 0 -5px; box-shadow: 0 0 0 3px rgba(246,220,42,.28); } }
+    /* Under 360px the dots shrink once more (kept from the Wellson build, harmless with 3 well-spaced towns) */
+    @media (max-width: 359.98px) { a.area-dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; box-shadow: 0 0 0 2px rgba(246,220,42,.28); } }
+
+    /* Hover-only effects: skipped on touch screens so nothing "sticks" after a tap */
+    @media (hover: hover) {
+      a.bg-brand-600:hover, button.bg-brand-600:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -10px rgba(33,104,154,.45); }
+      .btn-arrow:hover svg, a[href^="tel:"]:hover > svg:last-child, a.bg-brand-600:hover > svg:last-child { transform: translateX(3px); }
+      .stat-tile { transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease; }
+      .stat-tile:hover { transform: translateY(-3px); background: #fff; box-shadow: 0 12px 24px -14px rgba(9,27,40,.35); }
+      .stat-tile svg { transition: transform .3s ease; }
+      .stat-tile:hover svg { transform: scale(1.15); }
+      .review-card { transition: transform .25s ease, box-shadow .25s ease; }
+      .review-card:hover { transform: translateY(-4px); box-shadow: 0 18px 32px -16px rgba(9,27,40,.35); }
+      .info-card { transition: box-shadow .2s ease, background-color .2s ease; }
+      .info-card:hover { background: #fff; box-shadow: 0 0 0 1px #21689a, 0 10px 22px -14px rgba(9,27,40,.4); }
+      .info-card > span { transition: background-color .2s ease, color .2s ease; }
+      .info-card:hover > span { background: #21689a; color: #fff; }
+      .photo-hover > img { transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+      .photo-hover:hover > img { transform: scale(1.02); }
+      footer ul a:hover { transform: translateX(3px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal, .js .reveal-fade { opacity: 1; transform: none; transition: none; }
+      .hero-img, .hero-in > *, #estimate-status:not(.hidden) { animation: none; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+
+    /* Footer roof peak: the dark footer rises into the section above */
+    .roof-peak-up { position: absolute; left: 50%; bottom: 100%; width: 14rem; height: 2.25rem; transform: translateX(-50%); background: #091b28; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+    @media (max-width: 640px) { .roof-peak-up { width: 9rem; height: 1.5rem; } }
+    /* Service-area map dots */
+    .area-dot { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 9999px; background: #f6dc2a; box-shadow: 0 0 0 4px rgba(246,220,42,.28); }
+    .area-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 9999px; border: 2px solid #f6dc2a; opacity: 0; animation: area-pulse 2.6s ease-out infinite; }
+    .area-dot:hover, .area-dot:focus-visible { background: #fcf3b4; outline: none; z-index: 2; }
+    .area-tip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); background: #fff; color: #0f2b3f; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 6px 16px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .area-dot:hover .area-tip, .area-dot:focus-visible .area-tip { opacity: 1; }
+    @keyframes area-pulse { 0% { transform: scale(.6); opacity: .8; } 100% { transform: scale(2.2); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .area-dot::after { animation: none; } }
+    /* Reviews track: line up with the page container on the left, run off the right edge, hide the scrollbar */
+    .reviews-track { padding-left: max(1rem, calc((100% - 72rem) / 2 + 2rem)); padding-right: 1rem; scroll-padding-left: max(1rem, calc((100% - 72rem) / 2 + 2rem)); scrollbar-width: none; }
+    .reviews-track::-webkit-scrollbar { display: none; }
+    /* Services tiles 2 and 3: curved cutout that follows the round collage (--cx/--cy/--cr are set by script) */
+    @media (min-width: 1024px) {
+      .cut-svc {
+        -webkit-mask-image: radial-gradient(circle at var(--cx, 100%) var(--cy, 0), transparent var(--cr, 0px), #000 calc(var(--cr, 0px) + 0.6px));
+        mask-image: radial-gradient(circle at var(--cx, 100%) var(--cy, 0), transparent var(--cr, 0px), #000 calc(var(--cr, 0px) + 0.6px));
+      }
+    }
+    /* Roof-pitch cuts: diagonal corners on photos + hero, and a peak notch between sections */
+    .cut-tl { clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 22%); }
+    .cut-tr { clip-path: polygon(0 0, 86% 0, 100% 22%, 100% 100%, 0 100%); }
+    .cut-hero { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 7rem) 100%, 0 100%); }
+    .roof-peak { position: absolute; left: 50%; bottom: 0; width: 14rem; height: 2.25rem; transform: translateX(-50%); background: #fff; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+    @media (max-width: 640px) { .cut-hero { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), calc(100% - 4rem) 100%, 0 100%); } .roof-peak { width: 9rem; height: 1.5rem; } }
+    .marquee-track { animation: marquee-rtl 30s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee-rtl { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-edge {
+      position: absolute; top: 0; bottom: 0; width: 7rem; pointer-events: none; z-index: 1;
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    }
+    /* Text stand-ins; replace each <li> with an <img> of the brand's logo (grayscale, ~h-10) */
+    .brand-logo { font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 700; font-size: 1.75rem; color: #94a3b8; white-space: nowrap; }
+    @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+  </style>
+
+  <script>
+    // Services circle: the 4 photo segments crossfade through this pool (list them in segment order).
+    // Add or remove any number of the client's photos (5 or more, or the circle stays still) — the circle never depends on how many services there are.
+    const CIRCLE_PHOTOS = [
+      'images/circle-1.jpg',
+      'images/circle-2.jpg',
+      'images/circle-3.jpg',
+      'images/circle-4.jpg',
+      'images/circle-5.jpg',
+      'images/circle-6.jpg',
+      'images/circle-7.jpg',
+      'images/circle-8.jpg'
+    ];
+    (function () {
+      const segs = [...document.querySelectorAll('.circle-seg')];
+      const n = CIRCLE_PHOTOS.length;
+      if (segs.length === 0 || n <= segs.length) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const layers = segs.map(s => [...s.querySelectorAll('img')]);
+      const front = segs.map(() => 0);   // which of the 2 stacked <img> is currently visible
+      let t = 0;
+      setInterval(() => {
+        t++;
+        segs.forEach((_, k) => setTimeout(() => {
+          const [a, b] = [layers[k][front[k]], layers[k][1 - front[k]]];
+          const next = new Image();
+          next.onload = () => {
+            b.src = next.src;
+            b.classList.remove('opacity-0'); b.style.transition = 'opacity 1s'; b.style.opacity = 1;
+            a.style.transition = 'opacity 1s'; a.style.opacity = 0;
+            front[k] = 1 - front[k];
+          };
+          next.src = CIRCLE_PHOTOS[(t + k) % n];
+        }, k * 500));
+      }, 4500);
+    })();
+
+    // Services tiles 2 and 3: cut a curve out of each tile's edge that follows the round collage,
+    // so the shape stays matched whatever the paragraph length or screen width.
+    (function () {
+      const tiles = [...document.querySelectorAll('.cut-svc')];
+      const circle = document.getElementById('svc-circle');
+      const GAP = 16; // space between the circle and the tiles
+      if (!tiles.length || !circle) return;
+      function fit() {
+        if (!window.matchMedia('(min-width: 1024px)').matches) {
+          tiles.forEach(tile => ['--cx', '--cy', '--cr'].forEach(v => tile.style.removeProperty(v)));
+          return;
+        }
+        const c = circle.getBoundingClientRect();
+        tiles.forEach(tile => {
+          const t = tile.getBoundingClientRect();
+          tile.style.setProperty('--cx', (c.left + c.width / 2 - t.left) + 'px');
+          tile.style.setProperty('--cy', (c.top + c.height / 2 - t.top) + 'px');
+          tile.style.setProperty('--cr', (c.width / 2 + GAP) + 'px');
+        });
+      }
+      fit();
+      window.addEventListener('resize', fit);
+      window.addEventListener('load', fit);
+      if (window.ResizeObserver) {
+        // tiles shrink/grow when the paragraph changes length, so watch them as well as the circle and section
+        const ro = new ResizeObserver(fit);
+        [...tiles, circle, document.getElementById('services')].forEach(el => ro.observe(el));
+      }
+    })();
+
+    // Reviews: arrow buttons scroll the row by one card
+    (function () {
+      const track = document.getElementById('reviews-track');
+      if (!track) return;
+      const step = dir => {
+        const card = track.querySelector('article');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        track.scrollBy({ left: dir * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+      };
+      const prev = document.getElementById('reviews-prev');
+      const next = document.getElementById('reviews-next');
+      prev.addEventListener('click', () => step(-1));
+      next.addEventListener('click', () => step(1));
+      // Dim an arrow when there's nothing further to scroll in that direction
+      const sync = () => {
+        const max = track.scrollWidth - track.clientWidth - 2;
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= max;
+        // with only a couple of reviews every card fits on wider screens; hide the arrows rather than show two dead buttons
+        prev.parentElement.style.visibility = max <= 0 ? 'hidden' : '';
+      };
+      track.addEventListener('scroll', sync, { passive: true });
+      window.addEventListener('resize', sync);
+      sync();
+    })();
+
+    // Service tiles: jump to the estimate form with that service already selected
+    (function () {
+      const select = document.getElementById('est-service');
+      document.querySelectorAll('.svc-tile').forEach(tile => {
+        tile.addEventListener('click', () => {
+          const name = tile.querySelector('h3').textContent.trim();
+          const opt = [...select.options].find(o => o.textContent.trim() === name);
+          if (opt) select.value = opt.value || opt.textContent;
+        });
+      });
+    })();
+
+    // Estimate form: DEMO ONLY. Shows the success message; replace with a real submit (form action / fetch to the client's handler).
+    (function () {
+      const form = document.getElementById('estimate-form');
+      const status = document.getElementById('estimate-status');
+      if (!form) return;
+      const submit = form.querySelector('button[type="submit"]');
+      const label = submit.textContent;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        submit.setAttribute('aria-busy', 'true');
+        submit.disabled = true;
+        submit.textContent = 'Sending…';
+        setTimeout(() => {
+          submit.removeAttribute('aria-busy');
+          submit.disabled = false;
+          submit.textContent = label;
+          status.classList.remove('hidden');
+          form.reset();
+        }, 700);
+      });
+    })();
+
+    // Reveal-on-scroll: fades/slides .reveal / .reveal-fade elements in once as they enter the viewport.
+    // Children of a [data-stagger] container come in one after another.
+    (function () {
+      document.querySelectorAll('[data-stagger]').forEach(group => {
+        [...group.children].filter(c => c.matches('.reveal, .reveal-fade'))
+          .forEach((c, i) => c.style.setProperty('--reveal-delay', (i * 90) + 'ms'));
+      });
+      // Service tiles stagger in the order they appear
+      document.querySelectorAll('.svc-tile').forEach((t, i) => t.style.setProperty('--reveal-delay', (i * 80) + 'ms'));
+      const els = [...document.querySelectorAll('.reveal, .reveal-fade')];
+      if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('is-visible')); return; }
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // Map dots: each dot's invisible tap zone (--hit) reaches at most halfway to its nearest neighbour (max 12px),
+    // so close towns on a small map never steal each other's taps. Recomputed when the map changes size.
+    (function () {
+      const dots = [...document.querySelectorAll('.area-dot')];
+      if (dots.length < 2) return;
+      const fit = () => {
+        const r = dots.map(d => d.getBoundingClientRect());
+        dots.forEach((d, i) => {
+          let near = Infinity;
+          r.forEach((o, j) => { if (j !== i) near = Math.min(near, Math.hypot(o.x - r[i].x, o.y - r[i].y)); });
+          const scale = r[i].width / (d.offsetWidth || r[i].width); // the map is scaled 1.12x on desktop
+          const hit = Math.max(0, Math.min(12, Math.floor((near / 2 - r[i].width / 2) / scale)));
+          d.style.setProperty('--hit', hit + 'px');
+        });
+      };
+      fit();
+      if (window.ResizeObserver) new ResizeObserver(fit).observe(dots[0].parentElement);
+      else window.addEventListener('resize', fit);
+    })();
+
+    // Header: stronger shadow once the page has scrolled
+    (function () {
+      const header = document.getElementById('site-header');
+      const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    // Mobile menu: animated open/close; closes on link tap, Escape, outside tap, or when resizing up to desktop
+    (function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const setOpen = open => {
+        menu.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', open);
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      };
+      btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
+      // Collapsing the menu mid-scroll cancels the browser's own anchor jump, so close first, then scroll ourselves
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', e => {
+        const hash = a.getAttribute('href');
+        const target = hash && hash.startsWith('#') && hash.length > 1 && document.querySelector(hash);
+        setOpen(false);
+        if (!target) return;
+        e.preventDefault();
+        // wait for the drawer to finish collapsing, otherwise the page shifts up under the scroll and overshoots
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          history.pushState(null, '', hash);
+        }, 340);
+      }));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+      document.addEventListener('click', e => { if (menu.classList.contains('is-open') && !e.target.closest('#site-header')) setOpen(false); });
+      window.matchMedia('(min-width: 1024px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
+    })();
+  </script>
+</body>
+</html>
